@@ -65,11 +65,11 @@
 		<div class="row d-flex">
 			<div class="col-md-8 col-lg-12 d-flex">
 				<div>
-					@if(!Auth::user())
+					{{-- @if(!Auth::user())
 						<div id="video_overlays">
 							<p style="color: #fff; background-color: #fe9191; width: 90%;">&nbsp;&nbsp;&nbsp;Please subscribe inorder to play this video.</p>
 						</div>
-					@endif
+					@endif --}}
 					<video poster="" id="player" playsinline controls>
 					    <source src="{{ asset('videos/DNK activation.mp4') }}" type="video/mp4" />
 					</video>
@@ -176,7 +176,7 @@
 
               		
 
-              		<a class="nav-link px-4" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="false"> Nutrition Principles</a>
+              		<a class="nav-link px-4 active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="false"> Nutrition Principles</a>
 
               		<a class="nav-link px-4" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false"> Nutrition Rules</a>
 
@@ -294,10 +294,10 @@
               		</div>
 
               		<div class="tab-pane fade show active py-0" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
-		                <div class="scroll" style="overflow-y: scroll; height: 800px;">
+		                <div class="scroll" style="overflow-y: scroll; height: 800px; padding: 10px;">
 			                <h2 class="mb-4">Nutrition Principles</h2>
 			                <p>
-			                	<b>Follow one of three basic principles of nutrition.</b>
+			                	<b>Follow one of three basic principles of nutrition.</b><br>
 			                	When choosing any principle of nutrition drinking mode is always the same. It is necessary to drink before meals (15-20 minutes) at least 150 ml of water, hot water is better about 70 degrees, just drink hot water at least 5-6 times a day in small SIPS. Just a day to drink at least 2-3 liters of clean water (the water should not be very cold), but you should calculate for your body weight at the rate of 30 ml of water per kilogram of body weight yourself. If you drink more than the norm, it will be good, if you drink less than the norm then be careful, as you slow down the metabolic process. Do not get carried away with products in which there are additives that stimulate appetite (horseradish, mustard), as well as increase the appetite of spicy pickled vegetables, coffee, alcohol. 
 			            	</p>
 			            	<p>
@@ -450,12 +450,12 @@
 									<td>5</td>
 								</tr>
 								<tr>
-									<td colspan="2"><b>Most meats (veal,chicken, lamb, Turkey, rabbit) have a glycemic index of  0</b>
+									<td colspan="2"><b>Most meats (veal,chicken, lamb, Turkey, rabbit) have a glycemic index of  0</b><br>
 									Thus, your diet should be made taking into account the fact that on the day you should not eat foods more than 65-75 glycemic units . Here you make your own menu as you like, it is a great option for lovers of meat and seafood. But do not forget about the basic rules of power supply.</td>
 								</tr>
 								<tr>
 									<td colspan="2">
-										<b> Conclusion.</b>
+										<b> Conclusion.</b><br>
 										You decide on your diet, choosing one of the three principles that inevitably leads you to lose weight. If you find it difficult to choose and resort to the help of familiar nutritionists, then in this case you need to send your entire diet for approval to Julia, since she can not be responsible for someone else's work. Also you can order services of the nutritionist through our site if in it there will be a need, very skilled experts work with us. But we still encourage you to show resourcefulness, imagination and enthusiasm in cooking healthy food, start today to eat properly and consciously!
 										<img src="{{ asset('images/nutrition_principles.png') }}" width="100%">
 									</td>
@@ -465,16 +465,119 @@
 	              	</div>
 
 	              	<div class="tab-pane fade py-0" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
-		                <div class="scroll" style="overflow-y: scroll; height: 800px;">
+		                <div class="scroll" style="overflow-y: scroll; height: 800px; padding: 10px;">
 			                <h2 class="mb-4">Nutrition Rules</h2>
 			                <p>
-			                	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur
+			                	<b>Recommendations that need to be followed for the entire period of weight loss.</b>
 			            	</p>
+			            	<img src="{{ asset('images/nutrition_rules.png') }}" style="width: 100%;">
+			            	<p>
+			            		<b>Basic rules of nutrition</b><br>
+			            		There are many nutrition principles to increase the effectiveness of the weight loss process. But there are same rules under any principle nutrition, I believe the most important data 10 rules.
+			            	</p>
+			            	<ol>
+			            		<li>Start the morning with the most useful products to saturate the body with vitamins,trace elements to enhance the charge and vigor. It will be great (but not necessarily) if you can before Breakfast drink a cocktail made from a mixture of algae powders (Chlorella, spirulina), Peruvian poppies, as well as a pinch of turmeric with a high content of curcumin.</li>
+			            		<li>Observe the drinking regime 30ml of water per kilogram of weight. Not less than half a liter of daily volume of water should be with the addition of a weak decoction of stevia leaves. We take water in small SIPS constantly with a small interval of time.  It is desirable to take water in hot form but not more than 70 degrees. 2-2. 5 hours after lunch, make a water hour, drink about one liter of clean drinking water of good quality in this time period. If your body weight exceeds 70 kg then drink 1.5 liters of water for 1-1. 5 hours. 
+								It will be wonderful (but not necessarily) if the water is activated, increased its bioavailability at home. It is also desirable that the redox potential of water was in the range from minus 250 to plus 100 millivolts, the measurement can be made by the device. This will allow you to be more energetic, as the body will not need to spend their own energy to absorb water, so will be rejuvenation at the cellular level.</li>
+								<li>Introduced into the diet of the maximum amount of food (up to 80% or more)causing the shift of the internal environment of the body in an alkaline and minimize products makes the body acidic (no more than 15-20% of the daily diet) thereby normalizing substances and protecting the body from completely all the prerequisites for the emergence of cancer cells.</li>
+								<li>In every meal, eat a little protein, as protein accelerates metabolism and its absorption also requires the consumption of calories. We also use products that reduce insulin resistance (stevia tea, Chia seeds, chromium).We prefer products that accelerate the process of metabolism, during each meal, but at least twice a day we use a slice: fresh ginger, onion,garlic, radish Daikon, or other products of metabolic stimulants, depending on the state of your health (a break only in fasting days).</li>
+								<li>Experiencing a feeling of hunger immediately drink at least 100 ml of water with a weak decoction of stevia, do a breathing exercise (inhale the stomach protrudes, exhale the stomach retracts 10 times), then eat an Apple. If hunger has completely disappeared then postpone the main meal until the onset of real hunger, make a small snack if there is only a weak feeling of hunger.
+ 								Eat when your body asks and you are completely sure that this is not a false hunger.  Portions should be small, you can break your usual portion into 2-3 parts. Food should enter the stomach at intervals of a maximum of 4-4. 5 hours, so use a light snack in between main meals. Carry with a always a bit various nut (can be all nuts except cashews, walnuts and peanuts), Apple, Flaxseed bread, weak decoction stevia to to do easy snack through every 1.5 hours. For example, as a snack, you can eat 3-4 almond nuts and 3 hazelnuts, 2-3 Brazil nuts, drink stevia tea, eat an Apple or bread preferably made from flax seeds or Chia seeds with sesame or other additives. Lunch and dinner desirable to do roughly in one thing and the same time, but if hunger was false, then can be and shift on 1-1, 5 hours more later. When there is no time or opportunity for a timely meal then make sure to have a light snack. Food should come though in small quantities but often.</li>
+ 								<li>A very important point of proper nutrition is to understand the dangers of taking foods with a high glycemic index. Bakery products are shown as the most insidious product, as well as various drinks even if they are sugar-free. A huge amount of carbohydrates falls on your body which is not able to process everything into energy, so it has only one way out, to put carbohydrates in fat depots. 
+ 								Exclude from the diet of all products whose glycemic index is higher than 38-40 units for the entire period of weight loss. Tables glycemic index of all products you can always find on the Internet. If you can not find then write to support.  So for example,exclude from the diet all the drinks that you buy even if they are sugar-free. At home we make our own drinks without sugar: juices, smoothies, compotes, tea, juice and so on. Bakery products are available in any form, we prepare our own bread using cottage cheese, almond flour, ground Chia seeds, sesame seeds and so on.  Potatoes should be excluded in any form, carrots and beets should be used only in raw form. If you regaled a dish of potatoes weighing 200g (consider the glycemic index 95 + 95=190)then almost a GLASS of sugar enters the bloodstream, it is urgently necessary to dispose of it due to active physical activity (eg 5 km running) otherwise all the sugar will be deposited in the form of fat reserves, as well as increase the level of cholesterol in the blood. 
+								Thus, for the period of weight loss,all flour products,as well as products after frying in oil or fat, all confectionery products, even if they are on fructose, should be excluded. Are permitted only from dried fruits without sugar through technologies raw food.</li>
+								<li>
+									Women after 40 years to eat foods rich in plant estrogens, the content of which is indicated in this table.
+									<table class="table table-bordered">
+										<tr>
+											<td>Flax seed</td>
+											<td>379380 mcg</td>
+										</tr>
+										<tr>
+											<td>Soy bean</td>
+											<td>103920 mcg</td>
+										</tr>
+										<tr>
+											<td>Soy yogurt</td>
+											<td>10275 mcg</td>
+										</tr>
+										<tr>
+											<td>Sesame seed</td>
+											<td>8008.1 mcg</td>
+										</tr>
+										<tr>
+											<td>Flaxseed bread</td>
+											<td>75-40 mcg</td>
+										</tr>
+										<tr>
+											<td>Soy milk</td>
+											<td>2957.2 mcg</td>
+										</tr>
+										<tr>
+											<td>Hummus</td>
+											<td>993 mcg</td>
+										</tr>
+										<tr>
+											<td>Garlic</td>
+											<td>603.6 mcg</td>
+										</tr>
+										<tr>
+											<td>Dried apricot</td>
+											<td>444.5 mcg</td>
+										</tr>
+										<tr>
+											<td>Pistachios</td>
+											<td>382.5 mcg</td>
+										</tr>
+										<tr>
+											<td>Dates</td>
+											<td>329.5 mcg</td>
+										</tr>
+										<tr>
+											<td>Sunflower seeds</td>
+											<td>216 mcg</td>
+										</tr>
+										<tr>
+											<td>Chestnuts</td>
+											<td>210.2 mcg</td>
+										</tr>
+										<tr>
+											<td>Olive oil</td>
+											<td>180.7 mcg</td>
+										</tr>
+										<tr>
+											<td>Almond</td>
+											<td>131.1 mcg</td>
+										</tr>
+										<tr>
+											<td>Cashew</td>
+											<td>121.9 mcg</td>
+										</tr>
+										<tr>
+											<td>Green beans</td>
+											<td>105.8 mcg</td>
+										</tr>
+										<tr>
+											<td>Peanut</td>
+											<td>34.5 mcg</td>
+										</tr>
+										<tr>
+											<td>Onion</td>
+											<td>32 mcg</td>
+										</tr>
+									</table>
+									It is also desirable for all women to eat according to the phases of the menstrual cycle.  During ovulation or after it there is a physiological hunger, so do not do fasting days in this short period (usually only two days). Write down for yourself in your calendar the onset of these difficult days of increased appetite, watch these days in addition videos to reduce appetite, eat a variety of but small portions.<br>
+									This is an optional item! but you need to keep in mind especially those people who want to get a long-TERM result. If the cycle is broken, or it does not exist then you need to take into account the phases of the lunar cycle. In the first phase of the menstrual cycle (or lunar 1-7) it is allowed to use all products that retain water in the body(hydrophilic products).Just allow yourself an abundance of berries, citrus fruits, sometimes include in the diet fruits with a slightly elevated glycemic index (pineapple, mango, papaya). From cereals, give preference to buckwheat and spelt. It is very good to afford fresh walnuts,buy unpeeled. Seafood eat in full. The next phase of the cycle is 8-14 days, you can continue to take hydrophilic products, expand the variety of cereals (wheat and its derivatives like couscous, bulgur, spelt, barley, pearl barley, rye and so on).All types of legumes are allowed as in the first phase of the cycle. Give preference in favor of varieties of red fish. Do not forget about selenium, eat at least 3 Brazil nuts a day, you can also pine nuts, almonds. In the next phase of the cycle (15-21 days), reduce the consumption of hydrophilic products to a minimum: sauerkraut,cheese,cow's milk,string beans,all canned products with salt ,beets,celery, flour products of their own manufacture. Eat more fresh vegetables and fruits. Instead of legumes, eat more protein cereals such as oatmeal,buckwheat,quinoa,barley,corn. The last phase of the cycle should be with even more careful application of hydrophilic products. It is necessary to exclude all products with the highest rates of fluid retention in the body, including dried fruits. Give preference to products with rapid excretion from organism (PLANO,tvorog,kefir,pomidory,Agency,Caldera,redis,kubacki,Imber,Chesnok,morcovi,Arbus,Jabloki,brusnika,grusi,lemon,luck,Petrushka). Stevia tea brew with horsetail grass. Fish and seafood should be prepared by themselves with a minimum salt content
+								</li>
+								<li>If you overeat heat-treated foods with high calories the next day, make an additional fasting diet.  More suitable options are "Paradise Apple days" when all day you can eat apples of absolutely all varieties no more than two and a half kilograms. In the evening, you can eat bread from flax seeds or Chia seeds. Or make a fasting day like "cottage cheese Paradise" when during the day you eat only low-fat cottage cheese of different consistency. It is better to take 4 packs of cottage cheese 200 grams of different manufacturers and different consistency, one low-fat unsweetened yogurt 100g.  Cottage cheese can be consumed a little sprinkling with salt and herbs. In the evening there will be no hunger, cottage cheese saturates the body and even on this day you do not need to take anything. In both cases, a weak decoction of stevia should be taken all day.</li>
+								<li>Double the amount of physical activity. Movements can be physical and just massage. For example, in the morning after a shower immediately RUB yourself intensively with a towel. Next, when you are dressed then stretch yourself the entire shoulder area of the hands So for example you can get out of public transport two stops earlier and walk this section on foot. At home you can also even standing in one place to do jumps or running on the spot for 5 minutes for 5 sets a day. Light Jogging or Cycling will be the most excellent exercise for health. If you do a little more than three weeks, there will be an increase in the number of muscle fibers,as well as the content of mitochondria in your body will increase several times,and this will greatly accelerate the process of burning fat, since all the processes of glucose utilization take place only in the mitochondria.</li>
+								<li>Do not neglect breathing exercises to stimulate mitochondria and accelerate metabolism. Some of them are presented in a separate video. For especially lazy it is possible to apply the 16 hour fasting once a week for the same purpose. Accelerate the process of weight loss will also help the impact of high temperatures (infra red sauna, bath) and especially the impact of low temperatures (contrast shower, hardening, bathing in the springs). Daily contrast shower will help in a week to strengthen blood circulation several times, metabolism will accelerate and the output of excess fat will be the same several times more intense as well as the rejuvenation processes at the cellular level will launch its accelerated mechanism</li>
+			            	</ol>
 		            	</div>
 	              	</div>
 
 	              	<div class="tab-pane fade py-0" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
-		              	<div class="scroll" style="overflow-y: scroll; height: 800px; width: 100%;">
+		              	<div class="scroll" style="overflow-y: scroll; height: 800px; padding: 10px;">
 			                <h2 class="mb-4">Metabolic syndrome</h2>
 			                <p>
 			                	Metabolic syndrome increases with age, so every year it becomes more and more difficult to deal zwith.
@@ -535,29 +638,113 @@
 	              	</div>
 
 	              	<div class="tab-pane fade py-0" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
-		                <div class="scroll" style="overflow-y: scroll; height: 800px;">
+		                <div class="scroll" style="overflow-y: scroll; height: 800px; padding: 10px;">
 			                <h2 class="mb-4">Seaweed Superfood</h2>
-			                <p>
-			                	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur
-			            	</p>
+			                <b>Start the day with super food !!!</b>
+			                <p>Your "good morning" should begin with a positive attitude and the most healthy food to maintain activity throughout the day. You can choose for yourself any convenient option for a morning meal, even limit yourself to taking a vitamin complex from a pharmacy. If you care about your health more responsibly, then your morning should begin with the intake of natural products that will help not only support the body by creating a full balance of macro and micronutrients, but also improve your quality of life until you are completely protected from the development of diseases, including oncology and negative effects the environment.So, we will study independently the chemical composition of turmeric, and evaluate the ratio of harm and benefit. 18 useful properties of turmeric  will be an indispensable tool throughout the process of weight loss, but when you see the result you will not want to part with it. Turmeric must be of high quality, with a high content of curcumin. Take in the morning with hot water and a very small amount of black pepper.
+							Now let's talk about seaweed powders. This is a storehouse of vitamins and minerals. We study independently the chemical composition of chlorella, consider the beneficial properties of this algae. Spirulina also has a large number of useful properties, so I recommend making a combined composition of algae, you can add Peruvian poppy powder if you want to be even more active. Make powders at home for the least contact of all components with air. For example, pack algae powders 2.5 teaspoons each and pack turmeric powder with cereal germ flakes 2 teaspoons each (dissolving water is taken no more than 45 degrees if there is any cereal germ). This is not necessary, you can leave the mixture of powders in the jar, but it will be more interesting and convenient, and most importantly more useful. In practice, such a pre-packaged product is consumed 90% more often than not pre-packaged.</p>
+							<p>The beneficial properties of chlorella</p>
+							<p>
+							<b>Great for toxin withdrawal</b><br>
+							Toxins enter our food and water, and eventually end up in our body. When toxic substances accumulate in the body, this leads to various diseases, including cancer. Chlorella will help get rid of toxins and cleanse our system.
+							It has been found to be especially useful for removing heavy metals (cadmium, mercury and lead). In fact, a Japanese study found that it helps victims of cadmium poisoning remove toxins seven times faster than normal speed.
+							This is due to the rigid, indigestible, outer shell of the algae, which is credited with the effect of the removal of toxins. It consists of a fibrous mucopolysaccharide. Chlorella supplements are processed in such a way that they contain algae with their destroyed shell to make their nutrients available. When chlorella is taken regularly, the fibrous membrane binds to heavy metals and toxins and removes them from the body. People who take supplements at the beginning often experience bowel movements in the first few weeks. This is due to the process of removing toxins.
+							The cleansing effect is not limited to the gastrointestinal tract. It acts as a blood and liver cleanser. The high chlorophyll content in algae increases the level of hemoglobin in the blood. By the way, the molecular structure and composition of chlorophyll and hemoglobin are very similar, the only difference is hemoglobin, which contains iron, while chlorophyll contains magnesium.
+							With an increase in the level of hemoglobin, the ability of the blood to carry oxygen increases, blood circulation and the elimination of waste from various tissues and organs, including the liver, improve.
+ 							Chlorella is the most concentrated antioxidant food.
+							We hear a lot about antioxidants these days. These are molecules that can bind to free radicals, which cause serious damage to cells in our body. Many free radicals are formed during normal metabolic processes, and the body has a regular mechanism to neutralize them. For example, vitamins C, E, and beta-carotene have excellent antioxidant properties and help knock free radicals out of service by binding to them.
+							But when environmental pollutants and UV radiation are added to the radical burden on the body, our body finds it difficult to handle. When free radicals are allowed to move freely, these highly reactive molecules wreak havoc on our bodies, causing DNA cell damage and damage, which could potentially cause cancer. Antioxidant products and supplements easily reduce such cell damage.
+							Chlorella is rich in vitamins, but the antioxidant arsenal of algae is not limited to this. It contains several polyphenolic acids, which are equally good at stripping free radicals. Chlorella also activates glutathione - the strongest antioxidant in our body. Not only that, she adds her own glutathione to it. This is especially useful in counteracting the depletion of glutathione in the elderly.
+							Improving Immune Function
+							It has been found in several studies that algae is a true immunological stimulant. In South Korea, clinical trials of chlorella supplementation over a short period have shown an increase in immunological parameters.
+							When people received only 5 grams of chlorella per day for 8 weeks, the researchers found that the cellular activity of natural killers increased by 10% compared with those who took a placebo. Their gamma-interferon levels showed a significant increase, indicating an improvement in immunity against viral and bacterial infections. There was a similar increase in interleukin-1 beta.
+							Compared to people who have taken vitamin pills for immunity, chlorella offers a healthier alternative, because it is always better to get vitamins from food than to take synthetic products.
+							</p>
+							<p><b>Getting rid of digestive problems</b><br><br>Regular consumption of chlorella relieves digestive problems such as bloating, stomach cramps and other disorders. Chlorella extract contains many digestive enzymes, the most necessary of which are pepsin and chlorophyllase.
+							Stagnation of food in the digestive tract causes inflammation of the intestinal mucosa, reabsorption of toxic substances, as well as the spread of harmful microbes. Chlorella improves intestinal peristaltic function for faster food movement, preventing stagnation and diverticulitis. Anti-inflammatory and antioxidant properties bring relief to people suffering from ulcerative colitis, irritable bowel syndrome and Crohn's disease.
+							Chlorella has an excellent probiotic effect, providing a regular supply of intestines with nutrients and bacteria. These beneficial microbes break down soluble fibers and allow nutrients and vitamins to become available to our body.
+							</p>
+							<p>Provides Essential Fatty Acids</p>
+							<p>Algae contains alpha-linolenic acid (ALA) - the essential acid that Chia and flax seeds owe to their nutritious celebrity.</p>
+							<p><b>Healthy and young skin</b><br>Skin cells must be updated continuously to stay in good shape, but this process takes a lot of resources. Rich in amino acids, lipids, as well as several minerals, algae can provide all the substances necessary for skin regeneration.
+							Being in constant contact with environmental pollutants, the skin is prone to the harmful effects of free radicals, they then cause premature aging. Exposure to UV radiation from the sun is another risk factor. Besides the fact that antioxidants such as beta-carotene and lutein are abundant, Chlorella contains a number of phenolic compounds: chlorogenic acid, caffeic acid and other acids.
+							Every time a cell divides, there is a risk of telomere shortening and DNA damage. Shortened telomeres are markers of aging. Chlorella consists of rapidly dividing algae cells, and contains growth factor and nucleic acids, which help cell reproduction and skin regeneration. In laboratory tests of chlorella, it was proved that it prevents telomere shortening, thereby ensuring the health and beauty of the skin.
+							Topical use of chlorella can help treat skin ulcers and trichomoniasis. It is even used to treat skin rashes caused by exposure to radiation.
+							</p>
+							<p><b>Treats Allergy Symptoms</b><br>Algae is an effective natural histamine blocker. Consuming just 2 grams of Chlorella per day will help to effectively control sinuses, runny nose, sneezing, and other symptoms associated with seasonal allergies.
+							Cancer protection
+							This algae protects the body from cancer in many ways. Due to its high antioxidant activity, it protects cells from free radicals, and hence from DNA damage. Another important action of chlorella is to enhance our immune function. The enhanced action of T cells makes the body more able to identify and destroy damaged cells that might otherwise divide and form tumors.
+							Chlorella supplements are even used along with conventional cancer treatments like radiation and chemotherapy, which reduces their side effects. Since these procedures destroy the intestinal mucosa and impede digestion, algae provides a stable supply of all necessary substances.
+							Protects the liver
+							Algae has also been recognized for its incredible potential to protect the liver from damage associated with chronic liver disease. As a powerful antioxidant, it fights free radicals that damage liver tissue. It also helps the liver to remove toxins and toxic metals from the body. It is used to treat the liver from the harmful effects of alcoholism and excessive consumption of fatty foods.
+							Contributes to weight loss
+							If you are trying to lose weight, algae supplements will help in this task. As you already know, many diets for weight loss begin with a detoxification phase, and for good reason. The accumulation of toxins in the body is one of the reasons why many people have large amounts of body fat. To remove toxins from adipose tissue is the best mechanism for the survival of our body. Chlorella is the most powerful, natural detoxification agent, and most importantly affordable. Its effect can be felt already in the first days after the start of administration.
+							High protein diets are very effective for weight loss, but taking animal protein in abundance can put you at risk for developing atherosclerosis, as it develops from a high content of fat and cholesterol. Chlorella has an ideal ratio of protein to fat.
+							Chlorophyll increases hemoglobin and red blood cell count, improving oxygen supply to the blood and blood circulation. So there is an acceleration of metabolism and increased energy. People often report that they feel more energetic, tend to become more active as soon as they start taking chlorella supplements. Promotes weight loss, can be used in all programs to reduce weight.
+							</p>
+							<p><b>Helps control blood sugar and cholesterol</b><br>Since Chlorella accelerates the movement of food through the gastrointestinal tract, it is obvious that it can reduce the absorption of food cholesterol and fats in the blood. According to a study published in the journal Medicinal Food, it was found that chlorella reduces not only cholesterol, but also blood sugar, if you take 8 grams daily in divided doses.
+							The effect of lowering blood glucose was an interesting discovery, especially since it was only observed after the cholesterol level returned to normal. At the same time, algae also prevents hypoglycemia.<br><br>
+
+							For mental activity<br>
+
+							An excellent source of vitamin B12, essential for maintaining good brain function. Deficiency of this vitamin is associated with depression and memory loss. With age, the body’s ability to absorb this vitamin decreases, which puts older people at greater risk of B12 deficiency.
+							Chlorella is not only a rich vegan source of vitamin B12, it is present in a bioavailable form, which facilitates its rapid absorption. This seaweed is a good source of magnesium, a mineral important for brain health. It increases memory and facilitates learning, both in young children and the elderly. Vegetables and fruits are traditional food sources of magnesium, but the minerals in chlorella are better absorbed.<br><br>
+
+							For eye health
+							If carrots are believed to be very good for vision because of its beta-carotene content, then in chlorella it is several times more. It is rich not only in beta-carotene, but also in lutein (another important pigment for eye health). Lutein is concentrated in the lens, retina and macular region of the eye and protects the eye from damage caused by UV radiation.
+							A high lutein content in the eye is associated with a lower risk of developing age-related macular degeneration, a progressive disease that can lead to blindness. Cabbage, greens and spinach are common food sources of lutein, but with regular intake of chlorella supplements, you will get both beta-carotene and lutein in one.
+							Improves oral health
+							Chlorophyll is often included in oral hygiene products for a cleansing effect. Including greens in the diet, as you know, you will improve oral health and reduce bad breath, but greens do not contain as much chlorophyll as chlorella. If you take this seaweed, you can be sure of the health of your gums and teeth.
+							It is especially useful during pregnancy and lactation, as they increase immunoglobulin A, which transmits mother's immunity to the baby. In addition, lower levels of toxic dioxins are found in breast milk of mothers who take chlorella. A similar decrease is observed in cord blood. Chlorella supplements promote physical growth and cognitive development in young children.<br><br>
+
+							Good luck to you and longevity !!!
+							</p>
+							<img src="{{ asset('images/seaweed_superfood.jpg') }}" style="width: 100%;">
 		            	</div>
 	              	</div>
 
 	              	<div class="tab-pane fade py-0" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
-		                <div class="scroll" style="overflow-y: scroll; height: 800px;">
+		                <div class="scroll" style="overflow-y: scroll; height: 800px; padding: 10px;">
 			                <h2 class="mb-4">Snack Bread</h2>
+			                <b>Make bread for snacks.</b>
 			                <p>
-			                	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur
+			                	Make yourself a healthy snack for the whole week in just 30-40 minutes. To do this, you will need about 350-400 grams of flax seeds or Chia seeds, 20-30 grams of black sesame seeds,4 onions or 5 medium-sized carrots.
+  								Scroll the seeds through a coffee grinder, pass through a juicer carrots or onions, remove the cake (pulp) and mix it with the seeds and leave to stand for 5-10 minutes. If you have processed onions, the juice from the juicer is not necessary to use, remove the juice. If you used carrot the juice also pour in resulting mass of, so as carrot more dry and not can form a bit adhesive mass of. In this case, for the formation of adhesive mass used onions. n the daytime or evening, because calcium is best absorbed at night. Chia seeds contain a huge amount of antioxidants, about 9 times more than in citrus, this ensures the preservation of youth and protection from the negative effects of aggressive environmental factors. Also, the seeds are able to suppress appetite, contribute to the normalization of metabolic processes in the body, normalizes the production of hormones, improves susceptibility to insulin. 
+								So appetizing look loaves of Chia seeds with carrots and black sesame. Black sesame is also very useful for the body, especially for cleansing blood vessels and stabilizing the hormonal background,but we take it in very small quantities, since it is a product with high caloric content, it is contraindicated for people with increased body weight in an amount of more than 5-10 grams per day.
 			            	</p>
+			            	<img src="{{ asset('images/snack_bread_1.png') }}" style="width: 100%;">
+			            	<p>Next, take the resulting mass and divide into pieces, spread out to dry on a drying sheet in the form of cakes ( in this case, I use an infrared sheet) or electric dryers. You can use parchment paper, form loaves of any shape and leave to dry for 5-6 hours.  After the loaves dry, you can use the natural process of drying. But avoid heating the product more than 45 degrees to keep all the valuable properties in it. You can eat bread on your own and also using it as a basis for sandwiches or pizza. For example, you can spread bread with Guacamole or make them with carrots in Korean. This snack is very tasty and useful, a whole storehouse of vitamins and minerals. For example, Chia seeds contain calcium 10 times more than in milk, respectively, you strengthen your bone system, teeth, even if you used only one or two pieces.  
+							Possible improvisation, for example as a basis for bread to use other vegetables (except beets) or make fruit treats(oranges, bananas and so on) Banana bread Chia seeds you see in the photo.  
+							</p>
+							<img src="{{ asset('images/snack_bread_2.jpg') }}" style="width: 100%;"><br><br>
+							<img src="{{ asset('images/snack_bread_3.png') }}" style="width: 100%;">
+							<p> There is an important detail, in order for you to get the maximum benefit from Chia seeds, and flax seeds you need to carefully chew or be sure to scroll on the coffee grinder grain into flour, then the vitamin core is destroyed which we need. Otherwise, you will get only the effect of saturation from the seeds and improvement of the gastrointestinal tract, but all the valuable substances will remain undigested. You can not abuse the use of Chia seeds and flax seeds, the permissible daily rate of 50-60 grams of seeds, this is 2-3 large-sized bread. Bread is permissible to eat not only as a snack but also can be used as a late dinner before bedtime.</p>
 		            	</div>
 	              	</div>
 
 	              	<div class="tab-pane fade py-0" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
-		                <div class="scroll" style="overflow-y: scroll; height: 800px;">
+		                <div class="scroll" style="overflow-y: scroll; height: 800px; padding: 10px;">
 			                <h2 class="mb-4">Helping Gemstone</h2>
-			                <p>
-			                	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur
-			            	</p>
+			                <b>Use the natural power of stones</b><br>
+			                <p>Products made of natural stones can accelerate metabolism, having positive effects on all organ systems, weight loss as a consequence occurs passively from 3 to 5 kg per month. The most powerful stimulants of metabolism are red tiger's eye, magnesite,Iolite. 
+ 							Red tiger eye scored the highest number of positive responses while reducing the weight even in a normal lifestyle. Also, this stone has many unique properties in the field of improving the financial condition, protection from the negative effects of the information field of the earth, not to mention the healing properties of the mineral. </p>
+ 							<b>Tiger eye bracelet </b>
+ 							<img src="{{ asset('images/helping_gemstones_1.jpg') }}" style="width: 100%;">
+ 							<p>The next representative of the natural resource to accelerate metabolism-Iolite. Important!!! Do not chase the beauty of the stone as you risk buying a synthetic analogue. Stone helps not only in the fight against excess weight but also strengthens the immune system, normalizes the nervous system, enhances intuition and psychic abilities. It is also often used for cosmetic purposes to strengthen hair and nails.</p>
+ 							<b>Iolite bracelet</b>
+ 							<img src="{{ asset('images/helping_gemstones_2.jpg') }}" style="width: 100%;">
+ 							<b>Bracelet made of magnesite</b>
+ 							<img src="{{ asset('images/helping_gemstones_3.jpg') }}" style="width: 100%;">
+ 							<p>Less popular representative of the category of metabolic accelerators is magnesite. This stone has been used since ancient times as a powerful talisman against accidents, as it has the properties of protection from viral infections. Therapeutic properties are manifested in the ability to accelerate metabolism, protect blood vessels from spasm, especially the vessels of the brain, is recognized as a worthy prevention of cardiovascular diseases.</p>
+ 							<b>Reinforced the effects of gems to speed up weight loss. </b>
+ 							<p>Experienced leading experts in the field of lithotherapy recommend the use of several types of stones both for weight correction and in solving other complex problems. Thus, we can create our own set of jewelry in which the impact on the body will take place in many directions at the same time. Bracelet to reduce appetite, accelerate metabolism with alternating stones of Iolite, magnesite, Muscovite, seraphinite, kyanite and angelite can be as a vivid example of your imagination. If you have not found Muscovite or kyanite, or other stones, then they can be replaced with pink or mountain quartz or moonstone, the sequence of stones does not matter .This product will help not only to lose weight but also to consolidate the result after reaching the goal.</p>
+ 							<img src="{{ asset('images/helping_gemstones_4.jpg') }}" style="width: 100%;">
+ 							<b>Bracelet-Assembly for weight loss.</b>
+ 							<p>In ancient times it was believed that charging water with stones has a very powerful effect on the body,thanks to this procedure, you can lose weight right before your eyes.  But here it is necessary to consider that not all stones are suitable for direct contact with water, forming a safe chemical compound, as well as individual characteristics of the body. For example, for someone the infusion of water may seem weak despite the fact that the stones were in the water for more than a few hours, and for someone the impact of the same infusion will be so strong up to poisoning and the need to take adsorbents.  So let's consider the permissible variants of stones for this procedure.
+							</p>
+							<img src="{{ asset('images/helping_gemstones_5.jpg') }}" style="width: 100%;">
+							<p>Stones better use otelnye and not from bijouterie, instead stone Apatite (Royal or green) can be use green malachite, First, wash all stones, well to clear running water, then to Deposit in glass the glass and inject water good quality.  Secondly,to keep the light at least one hour but not more than two hours. Then start tasting the water. Assess how pleasant the taste of water, whether the state of health has changed, monitor all indicators for half an hour. If everything suits,then you can use this procedure as an additional but very effective method in the fight against excess weight. But it is necessary to remember that such water can cause harm if you kept stones in water more than two hours or drank more than one glass of water. 
+							There is a hypothesis, confirmed by most experts in the field that all used stones should be cleaned from the accumulation of negative energies by washing under running water. For example, the product that you wear in public places should be washed more often than those that are stored at home. Also it is possible to give charging the stones of sunlight,it is enough sometimes to put washed stones on the window sill. Just to give a mental call (program)for stone,which are going to use at the moment. All of these activities will strengthen ten times the effect of little wizards and the result will please you!</p>
 		            	</div>
 	              	</div>
 		
